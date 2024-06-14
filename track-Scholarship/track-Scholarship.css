@@ -1,0 +1,97 @@
+body {
+    font-family: 'Dubai', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    font-size: 45px;
+    font-weight: 400;
+    color: #1A1A1A;
+}
+
+.title img {
+    margin-right: 15px;
+}
+
+.scholarship-card {
+    background-color: #EEEEEE;
+    width: 976px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    min-height: 170px;
+    height: 170px;    padding: 20px 20px 0px 20px;
+    border: none;
+}
+
+
+.terms-list {
+    font-weight: 400;
+    font-size: 16px;
+    color: #1A1A1A;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.terms-list li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.terms-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    background-color: #171C8F;
+    border-radius: 50%;
+}
+
+.help-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 10px 50px;
+}
+
+.help-title {
+    font-weight: 400;
+    font-size: 28px;
+    color: #1A1A1A;
+    margin-bottom: 20px;
+}
+
+.help-option {
+    font-weight: 400;
+    font-size: 16px;
+    color: #1A1A1A;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.help-option-mahboub {
+    cursor: pointer;
+}
+
+.bold-text {
+    font-weight: 700;
+    padding: 0 5px;
+}
+
+.help-option i {
+    margin-right: 10px;
+    font-size: 24px;
+    color: #171C8F;
+}
+
+.help-option img {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}

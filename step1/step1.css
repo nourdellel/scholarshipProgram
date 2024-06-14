@@ -1,0 +1,195 @@
+@font-face {
+  font-family: 'Dubai';
+  src: url('path_to_your_font_file/Dubai-Regular.ttf') format('truetype');
+}
+
+body {
+  font-family: 'Dubai', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  width: 970px;
+  border-radius: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  background-color: #EEEEEE;
+  border-bottom: none;
+}
+
+.step {
+  font-size: 14px;
+  font-weight: 500;
+  color: #171C8F;
+  margin-right: 20px;
+}
+
+.step-one {
+  font-size: 57px;
+  font-weight: 400;
+  color: #171C8F;
+}
+
+.step-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 0;
+  color: #171C8F;
+  text-align: start;
+}
+
+.edit-container {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.edit-title {
+  font-size: 14px;
+  font-weight: 400;
+  color: #171C8F;
+  margin-right: 10px;
+  text-decoration: underline;
+}
+
+.edit-icon {
+  width: 43px;
+  height: 43px;
+  display: inline-block;
+}
+
+
+.card-body-text {
+  align-items: start;
+  display: flex;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.card-body {
+  padding: 20px 20px 30px 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, .125);
+  border-radius: 8px;
+}
+
+.btn-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.custom-label {
+  position: relative;
+  padding: 30px 25px 15px 25px;
+  width: 240px;
+  height: 112px;
+  border: 1px solid #D1D2E9;
+  border-radius: 10px;
+  text-align: start;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.custom-label:hover {
+  background-color: #f0f0f0;
+}
+
+.selected {
+  background-color: #f0f0f0;
+}
+
+.custom-label input[type="radio"]:checked~.custom-label {
+  background-color: #f0f0f0;
+}
+
+.custom-label input[type="radio"] {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: 2px solid #171C8F;
+}
+
+.yes-text {
+  color: #171C8F;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.sub-text {
+  color: #575757;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+
+
+.form-check-input:checked[type=radio] {
+  background-image: url(../icons/radioCheck.svg)
+}
+
+.form-check-input:checked {
+  background-color: #ffffff;
+  border-color: #171C8F;
+  border: 1.5px solid #171C8F;
+}
+
+#continueBtn {
+  width: 228px;
+  height: 56px;
+  background-color: #c9cdd0;
+  border: none;
+  color: white;
+  cursor: not-allowed;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#continueBtn:enabled {
+  cursor: pointer;
+}
+
+
+.text-icon-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+
+
+.card-header[data-bs-toggle="collapse"][aria-expanded="false"] {
+  background-color: #FFF;
+  border-top: none;
+  border-bottom: none;
+}
+
+.card-header[data-bs-toggle="collapse"][aria-expanded="false"] .step,
+.card-header[data-bs-toggle="collapse"][aria-expanded="false"] .title {
+  color: #575757;
+}
+
+.card:not(.show) {
+  border-top: none;
+  border-bottom: none;
+}
