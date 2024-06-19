@@ -84,8 +84,12 @@ body {
 
 .card-body {
   padding: 20px 20px 30px 30px;
-  border-bottom: 1px solid rgba(0, 0, 0, .125);
-  border-radius: 8px;
+  /* border-bottom: 1px solid rgba(0, 0, 0, .125); */
+  /* border-radius: 8px; */
+  border-left: 1px solid rgba(0, 0, 0, .125);
+  border-right: 1px solid rgba(0, 0, 0, .125);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 .btn-group {
@@ -190,6 +194,6 @@ body {
 }
 
 .card:not(.show) {
-  border-top: none;
-  border-bottom: none;
+  border-left: none;
+  border-right: none;
 }
