@@ -1,8 +1,3 @@
-@font-face {
-  font-family: 'Dubai';
-  src: url('path_to_your_font_file/Dubai-Regular.ttf') format('truetype');
-}
-
 body {
   font-family: 'Dubai', sans-serif;
   margin: 0;
@@ -31,9 +26,6 @@ body {
   align-items: center; */
   margin-bottom: 30px;
 }
-
-
-
 
 .card-header {
   display: flex;
@@ -442,7 +434,7 @@ li {
 }
 
 .form-check-input:checked {
-  background-color: #ffffff;
+  background-color: #ffffff !important;
   border-color: #171C8F;
   border: 1.5px solid #171C8F;
 }
@@ -484,7 +476,7 @@ li {
 
 .card-header[data-bs-toggle="collapse"][aria-expanded="false"] {
   background-color: #FFF;
-  border-top: none;
+  border-top: 1px solid rgba(0, 0, 0, .125);;
   border-bottom: none;
 }
 
@@ -498,6 +490,10 @@ li {
   border-right: none;
 }
 
+.card-container:not(.show) {
+  border-top: none !important;
+  border-bottom: 1px solid rgba(0, 0, 0, .125);;
+}
 
 .engage-container-text {
   display: flex;
@@ -666,7 +662,7 @@ li {
 }
 
 .help-card-header {
-  width: 100%;
+  max-width: 970px;
   border: 1px solid #9ABFF3;
   background-color: #E6EFFC;
   border-radius: 8px;
