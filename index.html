@@ -8,31 +8,36 @@
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
+  <button type="button" class="btn btn-primary mb-3" id="toggleLanguageBtn">العربية</button>
+
   <div class="container">
-    <p class="apply-title"><img src="../icons/apply.svg" alt="Apply Icon">Apply for Scholarship Program</p>
+    <div class="apply-container">
+      <img src="../icons/apply.svg" alt="Apply Icon">
+      <p class="apply-title" data-translate="applyScholarshipProgram"></p>
+    </div>
     <div class="row mt-4">
       <div class="card scholarship-card col-md-10">
         <div class="card-body">
-          <p class="scholarship-text">Based on the Roads and Transport Authority’s keenness to attract and sponsor UAE National high school graduates to obtain academic qualifications that are in line with the requirements and needs of the Authority’s work in the labor market, scholarships have been provided to UAE national students to enroll in a few leading and accredited educational institutions within the country.</p>
-          <p class="terms-title">Terms and conditions to enroll in the program:</p>
+          <p class="scholarship-text" data-translate="scholarshipProgramRoadsTransportAuthority">Based on the Roads and Transport Authority’s keenness to attract and sponsor UAE National high school graduates to obtain academic qualifications that are in line with the requirements and needs of the Authority’s work in the labor market, scholarships have been provided to UAE national students to enroll in a few leading and accredited educational institutions within the country.</p>
+          <p class="terms-title" data-translate="TermsAndConditions"></p>
           <ul class="terms-list term-apply">
-            <li>The applicant must be a national of the country.</li>
-            <li>To have obtained cumulative average of 3.5 for students continuing in third and fourth years in university studies.</li>
-            <li>Have an IELTS certificate or its equivalent as per the requirements of the university/educational institution.</li>
-            <li>To pass the personal interview successfully.</li>
-            <li>To be fit to work.</li>
-            <li>To be of good conduct and behavior according to a certificate from the competent authorities.</li>
-            <li>He must have completed national service or have an exemption (for males).</li>
-            <li>The candidate must be at least 18 years old to register in the Nafees program</li>
-            <li>The scholarship student and his guardian sign the scholarship contract and adhere to all the provisions mentioned therein.</li>
-            <li>Students of determination can also participate in the scholarship program</li>
+            <li data-translate="TermsAndConditions1"></li>
+            <li data-translate="TermsAndConditions2"></li>
+            <li data-translate="TermsAndConditions3"></li>
+            <li data-translate="TermsAndConditions4"></li>
+            <li data-translate="TermsAndConditions5"></li>
+            <li data-translate="TermsAndConditions6"></li>
+            <li data-translate="TermsAndConditions7"></li>
+            <li data-translate="TermsAndConditions8"></li>
+            <li data-translate="TermsAndConditions9"></li>
+            <li data-translate="TermsAndConditions10"></li>
           </ul>
         </div>
       </div>
       <div class="help-section col-md-2">
-        <p class="help-title">Can we help?</p>
-        <p class="help-option"><img src="../icons/phone.svg" alt="phone Icon"> Call us on <span class="help-bold-text">800 90 90</span></p>
-        <p class="help-option"><img src="../icons/Mahboub.svg" alt="mahboub Icon"> Chat with <span class="help-bold-text">Mahboub</span></p>
+        <p class="help-title" data-translate="canWeHelp"></p>
+        <p class="help-option"><img src="../icons/phone.svg" alt="Call Icon" > <span data-translate="callUsOn"></span><span class="help-bold-text">800 90 90</span></p>
+        <p class="help-option help-option-mahboub"><img src="../icons/Mahboub.svg" alt="Mahboub Icon"> <span data-translate="chatWith"> </span><span class="help-bold-text" data-translate="mahboub"></span></p>
       </div>
     </div>
   </div>
@@ -42,29 +47,29 @@
       <div class="card-header" data-bs-toggle="collapse" href="#step1" role="button" aria-expanded="false" aria-controls="step1">
         <span class="step step-one">1</span>
         <div class="step-details">
-            <span class="step">Step 1 of 5</span>
-            <h5 class="card-title title">Confirm Nationality</h5>
+            <span class="step" data-translate="step1of5"></span>
+            <h5 class="card-title title" data-translate="confirmNationality"></h5>
         </div>
         <div class="edit-container">
-            <span class="edit-title">Edit</span>
+            <span class="edit-title" data-translate="edit"></span>
             <img class="edit-icon" src="../icons/check.svg" alt="check Icon">
         </div>
     </div>
 
       <div id="step1" class="collapse">
         <div class="card-body first-card-body">
-          <p class="card-body-text">Are you UAE national?</p>
+          <p class="card-body-text" data-translate="areYouUAENational"></p>
           <div class="btn-group">
             <label class="custom-label">
-              <span class="yes-text">Yes</span><span class="sub-text">I am UAE national</span>
+              <span class="yes-text" data-translate="yes"></span><span class="sub-text" data-translate="iAmUAENational"></span>
               <input type="radio" name="nationality" value="yes" class="form-check-input">
             </label>
             <label class="custom-label">
-              <span class="yes-text">No</span><span class="sub-text">I am not</span>
+              <span class="yes-text" data-translate="no"></span><span class="sub-text" data-translate="iAmNot"></span>
               <input type="radio" name="nationality" value="no" class="form-check-input">
             </label>
           </div>
-          <button type="button" class="btn mt-5" id="continueBtn" disabled>Continue</button>
+          <button type="button" class="btn mt-5" id="continueBtn" data-translate="continue" disabled></button>
         </div>
       </div>
     </div>
@@ -74,11 +79,11 @@
       <div class="card-header" data-bs-toggle="collapse" href="#step2" role="button" aria-expanded="false" aria-controls="step2">
         <span class="step step-one">2</span>
         <div class="step-details">
-          <span class="step">Step 2 of 5</span>
-          <h5 class="card-title title">Personal Details</h5>
+          <span class="step" data-translate="step2of5"></span>
+          <h5 class="card-title title" data-translate="personalDetails"></h5>
         </div>
         <div class="edit-container">
-          <span class="edit-title">Edit</span>
+          <span class="edit-title" data-translate="edit"></span>
           <img class="edit-icon" src="../icons/check.svg" alt="check Icon">
       </div>
       </div>
@@ -87,100 +92,100 @@
           <div class="card terms-card">
             <div class="card-body">
               <ul class="terms-list">
-                <li>You are applying for a Scholarship Program, Please confirm or edit the contact details below</li>
+                <li data-translate="confirmDetails"></li>
               </ul>
             </div>
           </div>
-          <p class="details-text">Enter the below details</p>
+          <p class="details-text" data-translate="enterTheBelowDetails"></p>
           <div class="row mt-4">
             <div class="col-md-6 mb-4">
               <div class="form-group">
-                <label class="form-label">Full name according to the passport<span class="text-danger">*</span></label>
+                <label class="form-label" data-translate="fullName"></label><span class="text-danger">*</span>
                 <input type="text" class="form-control custom-input" placeholder="Full Name" required>
               </div>
             </div>
             <div class="col-md-6 mb-4">
               <div class="form-group">
-                <label class="form-label">Are you a Person of Determination<span class="text-danger">*</span></label>
+                <label class="form-label" data-translate="personOfDetermination"></label><span class="text-danger">*</span>
                 <div class="d-flex justify-content-start align-items-center mt-3">
                   <div class="form-check me-4">
                     <input class="form-check-input" type="radio" name="determination" id="yes" value="yes">
-                    <label class="form-check-label" for="yes">Yes</label>
+                    <label class="form-check-label" for="yes" data-translate="yes"></label>
                   </div>
                   <div class="form-check">
                     <input class="form-check-input" type="radio" name="determination" id="no" value="no">
-                    <label class="form-check-label" for="no">No</label>
+                    <label class="form-check-label" for="no" data-translate="yes"></label>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col-md-6 mb-4">
               <div class="form-group">
-                <label class="form-label">Your Gender<span class="text-danger">*</span></label>
+                <label class="form-label" data-translate="yourGender"></label><span class="text-danger">*</span>
                 <div class="d-flex justify-content-start align-items-center mt-3">
                   <div class="form-check me-4">
                     <input class="form-check-input" type="radio" name="gender" id="male" value="male">
-                    <label class="form-check-label" for="male">Male</label>
+                    <label class="form-check-label" for="male" data-translate="male"></label>
                   </div>
                   <div class="form-check">
                     <input class="form-check-input" type="radio" name="gender" id="female" value="female">
-                    <label class="form-check-label" for="female">Female</label>
+                    <label class="form-check-label" for="female" data-translate="female"></label>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col-md-6 mb-4" id="nationalServiceSection" style="display: none;">
               <div class="form-group">
-                <label class="form-label">Have you completed your national service?<span class="text-danger">*</span></label>
+                <label class="form-label" data-translate="nationalService"></label><span class="text-danger">*</span>
                 <div class="d-flex justify-content-start align-items-center mt-3">
                   <div class="form-check me-4">
                     <input class="form-check-input" type="radio" name="national-service" id="yes-national-service" value="yes">
-                    <label class="form-check-label" for="yes-national-service">Yes</label>
+                    <label class="form-check-label" for="yes-national-service" data-translate="yes"></label>
                   </div>
                   <div class="form-check">
                     <input class="form-check-input" type="radio" name="national-service" id="no-national-service" value="no">
-                    <label class="form-check-label" for="no-national-service">No</label>
+                    <label class="form-check-label" for="no-national-service" data-translate="no"></label>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col-md-6 mb-4">
               <div class="form-group">
-                <label class="form-label">Date of Birth<span class="text-danger">*</span></label>
+                <label class="form-label" data-translate="dateOfBirth"></label><span class="text-danger">*</span>
                 <input type="date" class="form-control custom-input" placeholder="Full Name" required>
               </div>
             </div>
             <div class="col-md-6 mb-4">
               <div class="form-group">
-                <label class="form-label">Mobile number<span class="text-danger">*</span></label>
+                <label class="form-label" data-translate="mobileNumber"></label><span class="text-danger">*</span>
                 <input type="tel" class="form-control custom-input" placeholder="+971 501 234 5678" required>
-                <small class="form-text text-muted">UAE numbers only</small>
+                <small class="form-text text-muted" data-translate="uaeNumberonly"></small>
               </div>
             </div>
             <div class="col-md-6 mb-4">
               <div class="form-group">
-                <label class="form-label">Email Address<span class="text-danger">*</span></label>
+                <label class="form-label" data-translate="emailAddress"></label><span class="text-danger">*</span>
                 <input type="email" class="form-control custom-input" placeholder="ex: name@example.com" required>
-                <small class="form-text text-muted">Valid email</small>
+                <small class="form-text text-muted" data-translate="emailAddress"></small>
               </div>
             </div>
             <div class="col-md-6">
               <div class="form-group">
-                <label class="form-label">Emirate<span class="text-danger">*</span></label>
+                <label class="form-label" data-translate="emirate"></label><span class="text-danger">*</span>
                 <select class="form-select custom-input" required>
-                  <option value="" selected disabled>Select Emirate</option>
-                  <option value="Dubai">Dubai</option>
-                  <option value="Abu Dhabi">Abu Dhabi</option>
-                  <option value="Sharjah">Sharjah</option>
-                  <option value="Ajman">Ajman</option>
-                  <option value="Umm Al-Quwain">Umm Al-Quwain</option>
-                  <option value="Fujairah">Fujairah</option>
-                  <option value="Ras Al Khaimah">Ras Al Khaimah</option>
+                  <option value="" selected disabled data-translate="selectEmirate"></option>
+                  <option value="Dubai" data-translate="dubai"></option>
+                  <option value="Abu Dhabi" data-translate="abuDhabi"></option>
+                  <option value="Sharjah" data-translate="sharjah"></option>
+                  <option value="Ajman" data-translate="ajman"></option>
+                  <option value="Umm Al-Quwain" data-translate="umAlQuwain"></option>
+                  <option value="Fujairah" data-translate="fujairah"></option>
+                  <option value="Ras Al Khaimah" data-translate="rasAlKhaumah"></option>
                 </select>
               </div>
             </div>
           </div>
-          <button type="button" class="btn mt-5" id="continueBtn">Continue</button>
+          <button type="button" class="btn mt-5" id="continueBtn" data-translate="continue"></button>
         </div>
       </div>
     </div>
@@ -190,47 +195,45 @@
       <div class="card-header" data-bs-toggle="collapse" href="#step3" role="button" aria-expanded="false" aria-controls="step3">
         <span class="step step-one">3</span>
         <div class="step-details">
-          <span class="step">Step 3 of 5</span>
-          <h5 class="card-title title">Educational information</h5>
+          <span class="step" data-translate="step3of5"></span>
+          <h5 class="card-title title" data-translate="educationalInformation"></h5>
         </div>
         <div class="edit-container">
-          <span class="edit-title">Edit</span>
+          <span class="edit-title" data-translate="edit"></span>
           <img class="edit-icon" src="../icons/check.svg" alt="check Icon">
       </div>
       </div>
       <div id="step3" class="collapse">
         <div class="card-body first-card-body">
-          <div id="gpaMessageCard" class="card terms-card mt-3" style="display: none;">
-            <div class="terms-card-header">
-              <ul class="status-message-error">
-                <img class="cancel-icon" src="../icons/cancel.svg" alt="cancel Icon">
-                Unfortunately, your GPA does not meet our minimum requirement of 3.5 and you cannot proceed with this application.
+          <div id="gpaMessageCard" class="card terms-card-container mt-3" style="display: none;">
+            <div class="terms-card-header error-message-container">
+              <img class="cancel-icon" src="../icons/cancel.svg" alt="cancel Icon">
+              <ul class="status-message-error" data-translate="unfortunatelyYourGpaIsYow">
               </ul>
             </div>
           </div>
-          <div id="hsgMessageCard" class="card terms-card mt-3" style="display: none;">
-            <div class="terms-card-header">
-              <ul class="status-message-error">
-                <img class="cancel-icon" src="../icons/cancel.svg" alt="cancel Icon">
-                Unfortunately, your high school graduation percentage does not meet our minimum requirement of 90% and you cannot proceed with this application.
+          <div id="hsgMessageCard" class="card terms-card-container mt-3" style="display: none;">
+            <div class="terms-card-header error-message-container">
+              <img class="cancel-icon" src="../icons/cancel.svg" alt="cancel Icon">
+              <ul class="status-message-error" data-translate="unfortunatelyYourPercentageIsLow">
               </ul>
             </div>
           </div>
 
-          <p class="details-text">Enter the below details</p>
+          <p class="details-text" data-translate="enterTheBelowDetails"></p>
           <div class="row mt-4">
             
             <div class="col-md-6 mb-4">
               <div class="form-group">
-                <label class="form-label">Current Educational Status<span class="text-danger">*</span></label>
+                <label class="form-label" data-translate="currentEducationalStatus"><span class="text-danger">*</span></label>
                 <div class="d-flex justify-content-start align-items-center mt-3">
                   <div class="form-check me-4">
                     <input class="form-check-input" type="radio" name="educational" id="school" value="school">
-                    <label class="form-check-label" for="school">High School Graduate</label>
+                    <label class="form-check-label" for="school" data-translate="highSchoolGraduate"></label>
                   </div>
                   <div class="form-check">
                     <input class="form-check-input" type="radio" name="educational" id="university" value="university">
-                    <label class="form-check-label" for="university">Currently Enrolled in University</label>
+                    <label class="form-check-label" for="university" data-translate="currentlyEnrolledInUniversity"></label>
                   </div>
                 </div>
               </div>
@@ -238,15 +241,15 @@
 
             <div id="highSchoolSection" class="col-md-6 mb-4" style="display: none;">
               <div class="form-group">
-                <label class="form-label">Type of High School Curriculum Completed:<span class="text-danger">*</span></label>
+                <label class="form-label" data-translate="highSchoolGraduate"></label><span class="text-danger">*</span>
                 <div class="d-flex justify-content-start align-items-center mt-3">
                   <div class="form-check me-4">
                     <input class="form-check-input" type="radio" name="typeHighSchool" id="advanced" value="advanced">
-                    <label class="form-check-label" for="advanced">Advanced</label>
+                    <label class="form-check-label" for="advanced" data-translate="advanced"></label>
                   </div>
                   <div class="form-check">
                     <input class="form-check-input" type="radio" name="typeHighSchool" id="general" value="general">
-                    <label class="form-check-label" for="general">General</label>
+                    <label class="form-check-label" for="general" data-translate="general"></label>
                   </div>
                 </div>
               </div>
@@ -254,17 +257,17 @@
 
             <div id="highSchoolPercentageSection" class="col-md-6 mb-4" style="display: none;">
               <div class="form-group">
-                <label class="form-label">Please enter your high school graduation percentage:<span class="text-danger">*</span></label>
+                <label class="form-label" data-translate="general"></label><span class="text-danger">*</span>
                 <input type="number" class="form-control custom-input" id="hsg" placeholder="High school graduation percentage" required>
-                <div class="invalid-feedback" id="hsgError">High school graduation percentage must be 90% or above</div>
+                <div class="invalid-feedback" id="hsgError" data-translate="highSchoolGraduationPercentageAbove90"></div>
               </div>
             </div>
 
             <div id="universityYearSection" class="col-md-6 mb-4" style="display: none;">
               <div class="form-group">
-                <label class="form-label">What year did you enroll in the university?<span class="text-danger">*</span></label>
+                <label class="form-label" data-translate="whatYearYoueEnrollInTheUniversity"></label><span class="text-danger">*</span>
                 <select class="form-select custom-input" required>
-                  <option value="" selected disabled>Select Year</option>
+                  <option value="" selected disabled data-translate="selectYear"></option>
                   <option class="form-label" value="2020">2020</option>
                   <option class="form-label" value="2021">2021</option>
                   <option class="form-label" value="2022">2022</option>
@@ -276,15 +279,15 @@
 
             <div id="universityGPASection" class="col-md-6" style="display: none;">
               <div class="form-group">
-                <label class="form-label">What is your current GPA?<span class="text-danger">*</span></label>
+                <label class="form-label" data-translate="currentGPA"></label><span class="text-danger">*</span>
                 <input type="number" class="form-control custom-input" id="gpa" placeholder="Please provide your most recent Grade Point Average (GPA)" required>
-                <div class="invalid-feedback" id="gpaError">Graduation percentage must be more than 3.5 to continue</div>
+                <div class="invalid-feedback" id="gpaError" data-translate="graduationPercentageMustBeMore35"></div>
               </div>
             </div>
 
             <div class="col-md-6">
               <div class="form-group">
-                <label class="form-label">What’s your current major?<span class="text-danger">*</span></label>
+                <label class="form-label" data-translate="graduationPercentageMustBeMore35"></label><span class="text-danger">*</span>
                 <input type="text" class="form-control custom-input" placeholder="current major" required>
               </div>
             </div>
@@ -293,41 +296,41 @@
           <div class="row mt-4">
             <div class="col-md-6 mb-4">
               <div class="form-group">
-                <label class="form-label">Which of the majors would you like to complete your studies in?<span class="text-danger">*</span></label>
+                <label class="form-label" data-translate="graduationPercentageMustBeMore35"></label><span class="text-danger">*</span>
                 <select class="form-select custom-input" required>
-                  <option value="" selected disabled>Select major</option>
-                  <option class="form-label" value="electromechanicalEngineering">Bachelor of Science in Electromechanical Engineering</option>
-                  <option class="form-label" value="digitalConstructionEngineeringManagement">Bachelor of Science in Digital Construction Engineering and Management</option>
-                  <option class="form-label" value="civilEngineering">Bachelor of Science in Civil Engineering</option>
-                  <option class="form-label" value="mechanicalEngineering">Bachelor of Science in Mechanical Engineering</option>
-                  <option class="form-label" value="computerScienceCybersecurityAI">Bachelor of Science in Computer Science (Cybersecurity/Artificial Intelligence)</option>
-                  <option class="form-label" value="mathematicsStatisticsDataScience">Bachelor's degree in Mathematics and Statistics, specializing in Data Science</option>
-                  <option class="form-label" value="electricalElectronicEngineering">Bachelor of Science in Electrical and Electronic Engineering</option>
-                  <option class="form-label" value="informationTechnology">Bachelor of Science in Information Technology</option>
-                  <option class="form-label" value="sustainableRenewableEnergyEngineering">Bachelor of Science in Sustainable and Renewable Energy Engineering</option>
-                  <option class="form-label" value="electricalEngineering">Bachelor of Science in Electrical Engineering</option>
-                  <option class="form-label" value="computerEngineering">Bachelor of Science in Computer Engineering</option>
-                  <option class="form-label" value="environmentalScienceSustainability">Bachelor of Science in Environmental Science and Sustainability</option>
+                  <option value="" selected disabled data-translate="selectMajor"></option>
+                  <option class="form-label" value="electromechanicalEngineering" data-translate="electromechanicalEngineering"></option>
+                  <option class="form-label" value="digitalConstructionEngineeringManagement" data-translate="digitalConstructionEngineeringManagement"></option>
+                  <option class="form-label" value="civilEngineering" data-translate="civilEngineering"></option>
+                  <option class="form-label" value="mechanicalEngineering" data-translate="mechanicalEngineering"></option>
+                  <option class="form-label" value="computerScienceCybersecurityAI" data-translate="computerScienceCybersecurityAI"></option>
+                  <option class="form-label" value="mathematicsStatisticsDataScience" data-translate="mathematicsStatisticsDataScience"></option>
+                  <option class="form-label" value="electricalElectronicEngineering" data-translate="electricalElectronicEngineering"></option>
+                  <option class="form-label" value="informationTechnology" data-translate="informationTechnology"></option>
+                  <option class="form-label" value="sustainableRenewableEnergyEngineering" data-translate="sustainableRenewableEnergyEngineering"></option>
+                  <option class="form-label" value="electricalEngineering" data-translate="electricalEngineering"></option>
+                  <option class="form-label" value="computerEngineering" data-translate="computerEngineering"></option>
+                  <option class="form-label" value="environmentalScienceSustainability" data-translate="environmentalScienceSustainability"></option>                  
                 </select>            
               </div>
             </div>
             <div class="col-md-6">
               <div class="form-group">
-                <label class="form-label">Which of the universities would you like to join?<span class="text-danger">*</span></label>
+                <label class="form-label" data-translate="graduationPercentageMustBeMore35"></label><span class="text-danger">*</span>
                 <select class="form-select custom-input" required>
-                  <option selected disabled>Select the universities you would like to join</option>
-                  <option class="form-label" value="birminghamUniversity">University of Birmingham</option>
-                  <option class="form-label" value="mbzuai">Mohammed bin Zayed University for Artificial Intelligence</option>
-                  <option class="form-label" value="aud">American University in Dubai</option>
-                  <option class="form-label" value="buid">The British University in Dubai</option>
-                  <option class="form-label" value="sharjahUniversity">Sharjah University</option>
-                  <option class="form-label" value="zayedUniversity">Zayed University</option>
-                  <option class="form-label" value="hct">Higher Colleges of Technology</option>
-                </select>            
+                  <option selected disabled data-translate="whichUniversitiesYouLikeToJoin"></option>
+                  <option class="form-label" value="birminghamUniversity" data-translate="birminghamUniversity"></option>
+                  <option class="form-label" value="mbzuai" data-translate="mbzuai"></option>
+                  <option class="form-label" value="aud" data-translate="aud"></option>
+                  <option class="form-label" value="buid" data-translate="buid"></option>
+                  <option class="form-label" value="sharjahUniversity" data-translate="sharjahUniversity"></option>
+                  <option class="form-label" value="zayedUniversity" data-translate="zayedUniversity"></option>
+                  <option class="form-label" value="hct" data-translate="hct"></option>
+                  </select>
               </div>
             </div>
           </div>
-          <button type="button" class="btn mt-5" id="continueBtn">Continue</button>
+          <button type="button" class="btn mt-5" id="continueBtn" data-translate="continue"></button>
         </div>
       </div>
     </div>
@@ -339,11 +342,11 @@
             aria-controls="step4">
             <span class="step step-one">4</span>
             <div class="step-details">
-                <span class="step">Step 4 of 5</span>
-                <h5 class="card-title title">Attachments and important information</h5>
+                <span class="step" data-translate="step4of5"></span>
+                <h5 class="card-title title" data-translate="attachmentsAndImportantInformation"></h5>
             </div>
             <div class="edit-container">
-                <span class="edit-title">Edit</span>
+                <span class="edit-title" data-translate="edit"></span>
                 <img class="edit-icon" src="../icons/check.svg" alt="check Icon">
             </div>
         </div>
@@ -354,22 +357,22 @@
 
                 <div class="card card-container text-center border-1 mb-5">
                     <div class="card-header sub-header">
-                        <span class="sub-header-text">Important information</span>
+                        <span class="sub-header-text" data-translate="importantInformation"></span>
                     </div>
                     <div class="card-body first-card-body">
 
-                        <p class="details-text">Enter the below details</p>
+                        <p class="details-text" data-translate="enterTheBelowDetails"></p>
                         <div class="row mt-4">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label class="form-label">Emirates ID number<span class="text-danger">*</span></label>
+                                    <label class="form-label" data-translate="emiratesIdNumber"></label><span class="text-danger">*</span>
                                     <input type="number" class="form-control custom-input"
                                         placeholder="Emirates ID Number" required>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label class="form-label">Emirates ID Expiry Date<span class="text-danger">*</span></label>
+                                    <label class="form-label" data-translate="emiratesIdExpiryDate"></label><span class="text-danger">*</span>
                                     <input type="date" class="form-control custom-input"
                                         placeholder="Emirates ID Expiry Date" required>
                                 </div>
@@ -379,31 +382,31 @@
                         <div class="row mt-4">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label class="form-label">Family book number<span class="text-danger">*</span></label>
+                                    <label class="form-label" data-translate="familyBookNumber"></label><span class="text-danger">*</span>
                                     <input type="number" class="form-control custom-input"
                                         placeholder="Family Book Number" required>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label class="form-label">Passport number<span class="text-danger">*</span></label>
+                                    <label class="form-label" data-translate="passportNumber"></label><span class="text-danger">*</span>
                                     <input type="number" class="form-control custom-input"
                                         placeholder="Passport Number" required>
-                                </div>
+                                </div>  
                             </div>
                         </div>
 
                         <div class="row mt-4">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label class="form-label">Passport place of issue<span class="text-danger">*</span></label>
+                                    <label class="form-label" data-translate="passportPlaceOfIssue"></label><span class="text-danger">*</span>
                                     <input type="text" class="form-control custom-input"
                                         placeholder="Passport Place Of Issue" required>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label class="form-label">Passport expiry date<span class="text-danger">*</span></label>
+                                    <label class="form-label" data-translate="passportExpiryDate"></label><span class="text-danger">*</span>
                                     <input type="date" class="form-control custom-input"
                                         placeholder="Passport Expiry Date" required>
                                 </div>
@@ -413,7 +416,7 @@
                         <div class="row mt-4">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label class="form-label">NAFS reference number<span class="text-danger">*</span></label>
+                                    <label class="form-label" data-translate="nafsReferenceNumber"></label><span class="text-danger">*</span>
                                     <input type="number" class="form-control custom-input"
                                         placeholder="NAFS Reference Number" required>
                                 </div>
@@ -425,21 +428,21 @@
 
                 <div class="card card-container text-center border-1">
                     <div class="card-header sub-header">
-                        <span class="sub-header-text">Attachments Copy</span>
+                        <span class="sub-header-text" data-translate="attachmentsCopy"></span>
                     </div>
                     <div class="card-body first-card-body">
 
-                        <p class="details-text">Attachments the below files</p>
+                        <p class="details-text" data-translate="attachmentsTheBelowFiles"></p>
                         <div class="row mt-4">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="familyBook" class="form-label">Family book<span
-                                            class="text-danger">*</span></label>
+                                    <label for="familyBook" class="form-label" data-translate="familyBook"></label><span
+                                    class="text-danger">*</span>
                                     <div class="file-upload-wrapper">
                                         <input type="file" class="file-upload-input" id="familyBook" required>
                                         <label for="familyBook" class="file-upload-label">
                                             <img src="../icons/file.svg" alt="file Icon">
-                                            <span class="file-upload-button">Select file</span>
+                                            <span class="file-upload-button" data-translate="selectFile"></span>
                                         </label>
                                         <div class="file-upload-details" style="display: none;">
                                             <img src="../icons/check.svg" alt="check Icon">
@@ -451,13 +454,13 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="passportCopy" class="form-label">Passport copy<span
-                                            class="text-danger">*</span></label>
+                                    <label for="passportCopy" class="form-label" data-translate="passportCopy"></label><span
+                                    class="text-danger">*</span>
                                     <div class="file-upload-wrapper">
                                         <input type="file" class="file-upload-input" id="passportCopy" required>
                                         <label for="passportCopy" class="file-upload-label">
                                             <img src="../icons/file.svg" alt="file Icon">
-                                            <span class="file-upload-button">Select file</span>
+                                            <span class="file-upload-button" data-translate="selectFile"></span>
                                         </label>
                                         <div class="file-upload-details" style="display: none;">
                                             <img src="../icons/check.svg" alt="check Icon">
@@ -472,13 +475,13 @@
                         <div class="row mt-4">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="idCopy" class="form-label">Emirates ID copy<span
-                                            class="text-danger">*</span></label>
+                                    <label for="idCopy" class="form-label" data-translate="emiratesIdCopy"></label><span
+                                    class="text-danger">*</span>
                                     <div class="file-upload-wrapper">
                                         <input type="file" class="file-upload-input" id="idCopy" required>
                                         <label for="idCopy" class="file-upload-label">
                                             <img src="../icons/file.svg" alt="file Icon">
-                                            <span class="file-upload-button">Select file</span>
+                                            <span class="file-upload-button" data-translate="selectFile"></span>
                                         </label>
                                         <div class="file-upload-details" style="display: none;">
                                             <img src="../icons/check.svg" alt="check Icon">
@@ -490,13 +493,13 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="birthCertificate" class="form-label">Birth certificate copy<span
-                                            class="text-danger">*</span></label>
+                                    <label for="birthCertificate" class="form-label" data-translate="birthCertificateCopy"></label><span
+                                    class="text-danger">*</span>
                                     <div class="file-upload-wrapper">
                                         <input type="file" class="file-upload-input" id="birthCertificate" required>
                                         <label for="birthCertificate" class="file-upload-label">
                                             <img src="../icons/file.svg" alt="file Icon">
-                                            <span class="file-upload-button">Select file</span>
+                                            <span class="file-upload-button" data-translate="selectFile"></span>
                                         </label>
                                         <div class="file-upload-details" style="display: none;">
                                             <img src="../icons/check.svg" alt="check Icon">
@@ -511,12 +514,12 @@
                         <div class="row mt-4">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="cv" class="form-label">CV<span class="text-danger">*</span></label>
+                                    <label for="cv" class="form-label" data-translate="cv"></label><span class="text-danger">*</span>
                                     <div class="file-upload-wrapper">
                                         <input type="file" class="file-upload-input" id="cv" required>
                                         <label for="cv" class="file-upload-label">
                                             <img src="../icons/file.svg" alt="file Icon">
-                                            <span class="file-upload-button">Select file</span>
+                                            <span class="file-upload-button" data-translate="selectFile"></span>
                                         </label>
                                         <div class="file-upload-details" style="display: none;">
                                             <img src="../icons/check.svg" alt="check Icon">
@@ -528,13 +531,12 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="personalPhoto" class="form-label">Personal photo (with white
-                                        background)<span class="text-danger">*</span></label>
+                                    <label for="personalPhoto" class="form-label" data-translate="personalPhoto"></label><span class="text-danger">*</span>
                                     <div class="file-upload-wrapper">
                                         <input type="file" class="file-upload-input" id="personalPhoto" required>
                                         <label for="personalPhoto" class="file-upload-label">
                                             <img src="../icons/file.svg" alt="file Icon">
-                                            <span class="file-upload-button">Select file</span>
+                                            <span class="file-upload-button" data-translate="selectFile"></span>
                                         </label>
                                         <div class="file-upload-details" style="display: none;">
                                             <img src="../icons/check.svg" alt="check Icon">
@@ -549,14 +551,13 @@
                         <div class="row mt-4">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="clearanceCertificate" class="form-label">Clearance certificate (good
-                                        conduct)<span class="text-danger">*</span></label>
+                                    <label for="clearanceCertificate" class="form-label" data-translate="clearanceCertificate"></label><span class="text-danger">*</span>
                                     <div class="file-upload-wrapper">
                                         <input type="file" class="file-upload-input" id="clearanceCertificate"
                                             required>
                                         <label for="clearanceCertificate" class="file-upload-label">
                                             <img src="../icons/file.svg" alt="file Icon">
-                                            <span class="file-upload-button">Select file</span>
+                                            <span class="file-upload-button" data-translate="selectFile"></span>
                                         </label>
                                         <div class="file-upload-details" style="display: none;">
                                             <img src="../icons/check.svg" alt="check Icon">
@@ -568,13 +569,12 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="acceptanceLettre" class="form-label">Acceptance letter from the
-                                        university<span class="text-danger">*</span></label>
+                                    <label for="acceptanceLettre" class="form-label" data-translate="acceptenceLetterFromTheUniversity"></label><span class="text-danger">*</span>
                                     <div class="file-upload-wrapper">
                                         <input type="file" class="file-upload-input" id="acceptanceLettre" required>
                                         <label for="acceptanceLettre" class="file-upload-label">
                                             <img src="../icons/file.svg" alt="file Icon">
-                                            <span class="file-upload-button">Select file</span>
+                                            <span class="file-upload-button" data-translate="selectFile"></span>
                                         </label>
                                         <div class="file-upload-details" style="display: none;">
                                             <img src="../icons/check.svg" alt="check Icon">
@@ -589,15 +589,14 @@
                         <div class="row mt-4">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="ApprovedCertificate" class="form-label">(IELTS) or (EMSAT)
-                                        certificate or an approved certificate<span
-                                            class="text-danger">*</span></label>
+                                    <label for="ApprovedCertificate" class="form-label" data-translate="ieltsOrEmsatCertificate"></label><span
+                                    class="text-danger">*</span>
                                     <div class="file-upload-wrapper">
                                         <input type="file" class="file-upload-input" id="ApprovedCertificate"
                                             required>
                                         <label for="ApprovedCertificate" class="file-upload-label">
                                             <img src="../icons/file.svg" alt="file Icon">
-                                            <span class="file-upload-button">Select file</span>
+                                            <span class="file-upload-button" data-translate="selectFile"></span>
                                         </label>
                                         <div class="file-upload-details" style="display: none;">
                                             <img src="../icons/check.svg" alt="check Icon">
@@ -609,14 +608,13 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="universitysRequirements" class="form-label">According to the
-                                        university’s requirements<span class="text-danger">*</span></label>
+                                    <label for="universitysRequirements" class="form-label" data-translate="accordingToTheUniversityRequirments"></label><span class="text-danger">*</span>
                                     <div class="file-upload-wrapper">
                                         <input type="file" class="file-upload-input" id="universitysRequirements"
                                             required>
                                         <label for="universitysRequirements" class="file-upload-label">
                                             <img src="../icons/file.svg" alt="file Icon">
-                                            <span class="file-upload-button">Select file</span>
+                                            <span class="file-upload-button" data-translate="selectFile"></span>
                                         </label>
                                         <div class="file-upload-details" style="display: none;">
                                             <img src="../icons/check.svg" alt="check Icon">
@@ -631,14 +629,13 @@
                         <div class="row mt-4">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="highSchoolDiploma" class="form-label">High school diploma attested
-                                        by the Ministry of Education<span class="text-danger">*</span></label>
+                                    <label for="highSchoolDiploma" class="form-label" data-translate="highSchoolDiploma"></label><span class="text-danger">*</span>
                                     <div class="file-upload-wrapper">
                                         <input type="file" class="file-upload-input" id="highSchoolDiploma"
                                             required>
                                         <label for="highSchoolDiploma" class="file-upload-label">
                                             <img src="../icons/file.svg" alt="file Icon">
-                                            <span class="file-upload-button">Select file</span>
+                                            <span class="file-upload-button" data-translate="selectFile"></span>
                                         </label>
                                         <div class="file-upload-details" style="display: none;">
                                             <img src="../icons/check.svg" alt="check Icon">
@@ -650,13 +647,12 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="universityRecord" class="form-label">University academic record in
-                                        case of continuation of study<span class="text-danger">*</span></label>
+                                    <label for="universityRecord" class="form-label" data-translate="universityAcademicRecord"></label><span class="text-danger">*</span>
                                     <div class="file-upload-wrapper">
                                         <input type="file" class="file-upload-input" id="universityRecord" required>
                                         <label for="universityRecord" class="file-upload-label">
                                             <img src="../icons/file.svg" alt="file Icon">
-                                            <span class="file-upload-button">Select file</span>
+                                            <span class="file-upload-button" data-translate="selectFile"></span>
                                         </label>
                                         <div class="file-upload-details" style="display: none;">
                                             <img src="../icons/check.svg" alt="check Icon">
@@ -671,13 +667,12 @@
                         <div class="row mt-4">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="pod" class="form-label">POD card from the Ministry of Community
-                                        Development<span class="text-danger">*</span></label>
+                                    <label for="pod" class="form-label" data-translate="podCard"></label><span class="text-danger">*</span>
                                     <div class="file-upload-wrapper">
                                         <input type="file" class="file-upload-input" id="pod" required>
                                         <label for="pod" class="file-upload-label">
                                             <img src="../icons/file.svg" alt="file Icon">
-                                            <span class="file-upload-button">Select file</span>
+                                            <span class="file-upload-button" data-translate="selectFile"></span>
                                         </label>
                                         <div class="file-upload-details" style="display: none;">
                                             <img src="../icons/check.svg" alt="check Icon">
@@ -692,11 +687,10 @@
                 </div>
                 <div class="form-check mt-4">
                     <input class="form-check-input" type="checkbox" id="termsCheckbox">
-                    <label class="form-check-label" for="termsCheckbox">
-                        Agree to terms and conditions
+                    <label class="form-check-label" for="termsCheckbox" data-translate="agreeTermAndConditions">
                     </label>
                 </div>
-                <button type="button" class="btn mt-5" id="continueBtn">Continue</button>
+                <button type="button" class="btn mt-5" id="continueBtn" data-translate="continue"></button>
             </div>
         </div>
     </div>
@@ -708,11 +702,11 @@
           aria-controls="step5">
           <span class="step step-one">5</span>
           <div class="step-details">
-              <span class="step">Step 5 of 5</span>
-              <h5 class="card-title title">Review and Submit</h5>
+              <span class="step" data-translate="step5of5"></span>
+              <h5 class="card-title title" data-translate="reviewAndSubmit"></h5>
           </div>
           <div class="edit-container">
-              <span class="edit-title">Edit</span>
+              <span class="edit-title" data-translate="edit"></span>
               <img class="edit-icon" src="../icons/check.svg" alt="check Icon">
           </div>
       </div>
@@ -721,52 +715,52 @@
           <div class="card-body first-card-body">
               <div class="card card-container text-center border-1 mb-5">
                   <div class="card-header sub-header">
-                      <span class="sub-header-text">Nationality</span>
+                      <span class="sub-header-text" data-translate="reviewAndSubmit"></span>
                   </div>
                   <div class="card-body first-card-body">
 
-                      <p class="regular-text">Enter the below details</p>
-                      <p class="bold-text">Yes, I am UAE national</p>
+                      <p class="regular-text" data-translate="nationality"></p>
+                      <p class="bold-text" data-translate="yesImUaeNational"></p>
 
                   </div>
               </div>
 
               <div class="card card-container text-center border-1 mb-5">
                   <div class="card-header sub-header">
-                      <span class="sub-header-text">Personal Details</span>
+                      <span class="sub-header-text" data-translate="personalDetails"></span>
                   </div>
                   <div class="card-body first-card-body">
 
                       <div class="row mt-2">
                           <div class="col-md-6">
-                              <p class="regular-text">Full name according to the passport</p>
+                              <p class="regular-text" data-translate="fullName"></p>
                               <p class="bold-text">Soliman Shaban Soliman Ahmed</p>
                           </div>
                           <div class="col-md-6">
-                              <p class="regular-text">Your Gender</p>
-                              <p class="bold-text">Male</p>
+                              <p class="regular-text" data-translate="yourGender"></p>
+                              <p class="bold-text" data-translate="male"></p>
                           </div>
                       </div>
 
                       <div class="row mt-2">
                           <div class="col-md-6">
-                              <p class="regular-text">Date of Birth</p>
+                              <p class="regular-text" data-translate="dateOfBirth"></p>
                               <p class="bold-text">23/04/2004</p>
                           </div>
                           <div class="col-md-6">
-                              <p class="regular-text">Mobile number</p>
+                              <p class="regular-text" data-translate="mobileNumber"></p>
                               <p class="bold-text">+971 501 234 5678</p>
                           </div>
                       </div>
 
                       <div class="row mt-2">
                           <div class="col-md-6">
-                              <p class="regular-text">Email Address:</p>
+                              <p class="regular-text" data-translate="emailAddress"></p>
                               <p class="bold-text">Example@Email.com</p>
                           </div>
                           <div class="col-md-6">
-                              <p class="regular-text">Emirate</p>
-                              <p class="bold-text">Dubai</p>
+                              <p class="regular-text" data-translate="emirate"></p>
+                              <p class="bold-text" data-translate="dubai"></p>
                           </div>
                       </div>
                   </div>
@@ -774,40 +768,40 @@
 
               <div class="card card-container text-center border-1 mb-5">
                   <div class="card-header sub-header">
-                      <span class="sub-header-text">Educational information</span>
+                      <span class="sub-header-text" data-translate="educationalInformation"></span>
                   </div>
                   <div class="card-body first-card-body">
 
                       <div class="row mt-2">
                           <div class="col-md-6">
-                              <p class="regular-text">Current Educational Status:</p>
-                              <p class="bold-text">High School Graduate</p>
+                              <p class="regular-text" data-translate="currentEducationalStatus">:</p>
+                              <p class="bold-text" data-translate="highSchoolGraduate"></p>
                           </div>
                           <div class="col-md-6">
-                              <p class="regular-text">Type of High School Curriculum Completed:</p>
-                              <p class="bold-text">Advanced</p>
+                              <p class="regular-text" data-translate="typeOfHighSchoolCurriculum">:</p>
+                              <p class="bold-text" data-translate="advanced"></p>
                           </div>
                       </div>
 
                       <div class="row mt-2">
                           <div class="col-md-6">
-                              <p class="regular-text">Please enter your high school graduation percentage:</p>
+                              <p class="regular-text" data-translate="enterYourHighSchoolGraduationPercentage"></p>
                               <p class="bold-text">94%</p>
                           </div>
                           <div class="col-md-6">
-                              <p class="regular-text">What’s your current major?</p>
+                              <p class="regular-text" data-translate="yourCurrentMajor"></p>
                               <p class="bold-text">majo Selected</p>
                           </div>
                       </div>
 
                       <div class="row mt-2">
                           <div class="col-md-6">
-                              <p class="regular-text">Which of the majors would you like to complete your studies
+                              <p class="regular-text" data-translate="whichMajorsYouLikeToComplete">
                                   in?</p>
                               <p class="bold-text">Major Selected</p>
                           </div>
                           <div class="col-md-6">
-                              <p class="regular-text">Which of the universities you would like to join?</p>
+                              <p class="regular-text" data-translate="whichUniversitiesYouLikeToJoin"></p>
                               <p class="bold-text">universities Name</p>
                           </div>
                       </div>
@@ -816,62 +810,62 @@
 
               <div class="card card-container text-center border-1 mb-5">
                   <div class="card-header sub-header">
-                      <span class="sub-header-text">Attachments and important information</span>
+                      <span class="sub-header-text" data-translate="attachmentsAndImportantInformation"></span>
                   </div>
                   <div class="card-body first-card-body">
-                      <p class="bold-text">Important information</p>
+                      <p class="bold-text" data-translate="importantInformation"></p>
                       <div class="row mt-2">
                           <div class="col-md-6">
-                              <p class="regular-text">Emirates ID number</p>
+                              <p class="regular-text" data-translate="emiratesIdNumber"></p>
                               <p class="bold-text">Example</p>
                           </div>
                           <div class="col-md-6">
-                              <p class="regular-text">Emirates ID Expiry Date</p>
+                              <p class="regular-text" data-translate="emiratesIdExpiryDate"></p>
                               <p class="bold-text">Example</p>
                           </div>
                       </div>
 
                       <div class="row mt-2">
                           <div class="col-md-6">
-                              <p class="regular-text">Family book number</p>
+                              <p class="regular-text" data-translate="familyBookNumber"></p>
                               <p class="bold-text">Example</p>
                           </div>
                           <div class="col-md-6">
-                              <p class="regular-text">Passport number</p>
-                              <p class="bold-text">Example</p>
-                          </div>
-                      </div>
-
-                      <div class="row mt-2">
-                          <div class="col-md-6">
-                              <p class="regular-text">Passport place of issue</p>
-                              <p class="bold-text">Example</p>
-                          </div>
-                          <div class="col-md-6">
-                              <p class="regular-text">Passport expiry date</p>
+                              <p class="regular-text" data-translate="passportNumber"></p>
                               <p class="bold-text">Example</p>
                           </div>
                       </div>
 
                       <div class="row mt-2">
                           <div class="col-md-6">
-                              <p class="regular-text">NAFS reference number number</p>
+                              <p class="regular-text" data-translate="passportPlaceOfIssue"></p>
+                              <p class="bold-text">Example</p>
+                          </div>
+                          <div class="col-md-6">
+                              <p class="regular-text" data-translate="passportExpiryDate"></p>
+                              <p class="bold-text">Example</p>
+                          </div>
+                      </div>
+
+                      <div class="row mt-2">
+                          <div class="col-md-6">
+                              <p class="regular-text" data-translate="nafsReferenceNumber"></p>
                               <p class="bold-text">133423455245</p>
                           </div>
                       </div>
-                      <p class="bold-text mt-4">Attachments Copy</p>
+                      <p class="bold-text mt-4" data-translate="attachmentsCopy"></p>
 
                       <div class="row mt-4">
                           <div class="col-md-6 mb-2">
                               <div class="form-group">
-                                  <label for="familyBookUpdate" class="form-label">Family book<span
-                                          class="text-danger">*</span></label>
+                                  <label for="familyBookUpdate" class="form-label" data-translate="familyBook"></label><span
+                                  class="text-danger">*</span>
                                   <div class="file-upload-wrapper">
                                       <input type="file" class="file-upload-input" id="familyBookUpdate">
                                       <label for="familyBookUpdate" class="file-upload-label"
                                           style="display: none;">
                                           <img src="../icons/file.svg" alt="file Icon">
-                                          <span class="file-upload-button">Select file</span>
+                                          <span class="file-upload-button" data-translate="selectFile"></span>
                                       </label>
                                       <div class="file-upload-details" style="display: flex;">
                                           <img src="../icons/check.svg" alt="check Icon">
@@ -884,14 +878,14 @@
                           </div>
                           <div class="col-md-6 mb-2">
                               <div class="form-group">
-                                  <label for="passportCopyUpdate" class="form-label">Passport copy<span
-                                          class="text-danger">*</span></label>
+                                  <label for="passportCopyUpdate" class="form-label" data-translate="passportCopy"></label><span
+                                  class="text-danger">*</span>
                                   <div class="file-upload-wrapper">
                                       <input type="file" class="file-upload-input" id="passportCopyUpdate">
                                       <label for="passportCopyUpdate" class="file-upload-label"
                                           style="display: none;">
                                           <img src="../icons/file.svg" alt="file Icon">
-                                          <span class="file-upload-button">Select file</span>
+                                          <span class="file-upload-button" data-translate="selectFile"></span>
                                       </label>
                                       <div class="file-upload-details" style="display: flex;">
                                           <img src="../icons/check.svg" alt="check Icon">
@@ -906,13 +900,13 @@
                       <div class="row ">
                           <div class="col-md-6 mb-2">
                               <div class="form-group">
-                                  <label for="idCopyUpdate" class="form-label">Emirates ID copy<span
-                                          class="text-danger">*</span></label>
+                                  <label for="idCopyUpdate" class="form-label" data-translate="emiratesIdCopy"></label><span
+                                  class="text-danger">*</span>
                                   <div class="file-upload-wrapper">
                                       <input type="file" class="file-upload-input" id="idCopyUpdate">
                                       <label for="idCopyUpdate" class="file-upload-label" style="display: none;">
                                           <img src="../icons/file.svg" alt="file Icon">
-                                          <span class="file-upload-button">Select file</span>
+                                          <span class="file-upload-button" data-translate="selectFile"></span>
                                       </label>
                                       <div class="file-upload-details" style="display: flex;">
                                           <img src="../icons/check.svg" alt="check Icon">
@@ -925,14 +919,13 @@
                           </div>
                           <div class="col-md-6 mb-2">
                               <div class="form-group">
-                                  <label for="birthCertificateUpdate" class="form-label">Birth certificate
-                                      copy<span class="text-danger">*</span></label>
+                                  <label for="birthCertificateUpdate" class="form-label" data-translate="birthCertificateCopy"></label><span class="text-danger">*</span>
                                   <div class="file-upload-wrapper">
                                       <input type="file" class="file-upload-input" id="birthCertificateUpdate">
                                       <label for="birthCertificateUpdate" class="file-upload-label"
                                           style="display: none;">
                                           <img src="../icons/file.svg" alt="file Icon">
-                                          <span class="file-upload-button">Select file</span>
+                                          <span class="file-upload-button" data-translate="selectFile"></span>
                                       </label>
                                       <div class="file-upload-details" style="display: flex;">
                                           <img src="../icons/check.svg" alt="check Icon">
@@ -947,13 +940,13 @@
                       <div class="row">
                           <div class="col-md-6 mb-2">
                               <div class="form-group">
-                                  <label for="cvUpdate" class="form-label">CV<span
-                                          class="text-danger">*</span></label>
+                                  <label for="cvUpdate" class="form-label" data-translate="cv"></label><span
+                                  class="text-danger">*</span>
                                   <div class="file-upload-wrapper">
                                       <input type="file" class="file-upload-input" id="cvUpdate">
                                       <label for="cvUpdate" class="file-upload-label" style="display: none;">
                                           <img src="../icons/file.svg" alt="file Icon">
-                                          <span class="file-upload-button">Select file</span>
+                                          <span class="file-upload-button" data-translate="selectFile"></span>
                                       </label>
                                       <div class="file-upload-details" style="display: flex;">
                                           <img src="../icons/check.svg" alt="check Icon">
@@ -966,8 +959,7 @@
                           </div>
                           <div class="col-md-6 mb-2">
                               <div class="form-group">
-                                  <label for="personalPhotoUpdate" class="form-label">Personal photo (with white
-                                      background)<span class="text-danger">*</span></label>
+                                  <label for="personalPhotoUpdate" class="form-label" data-translate="personalPhoto"></label><span class="text-danger">*</span>
                                   <div class="uploaded-photo-wrapper"
                                       style="display: flex; align-items: center; margin-top: 10px;">
                                       <img src="../icons/profilePhoto.png" alt="uploaded personal photo"
@@ -978,64 +970,18 @@
 
                           </div>
                       </div>
-                      <div class="row">
-                          <div class="col-md-6 mb-2">
-                              <div class="form-group">
-                                  <label for="marriageCertificateUpdate" class="form-label">Marriage certificate
-                                      (if applicable)<span class="text-danger">*</span></label>
-                                  <div class="file-upload-wrapper">
-                                      <input type="file" class="file-upload-input" id="marriageCertificateUpdate">
-                                      <label for="marriageCertificateUpdate" class="file-upload-label"
-                                          style="display: none;">
-                                          <img src="../icons/file.svg" alt="file Icon">
-                                          <span class="file-upload-button">Select file</span>
-                                      </label>
-                                      <div class="file-upload-details" style="display: flex;">
-                                          <img src="../icons/check.svg" alt="check Icon">
-                                          <a href="#"
-                                              class="file-upload-name">uploaded-marriage-certificate.pdf</a>
-                                          <img src="../icons/delete.svg" alt="delete Icon"
-                                              class="file-upload-remove">
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="col-md-6 mb-2">
-                              <div class="form-group">
-                                  <label for="academicCertificatesUpdate" class="form-label">Academic
-                                      certificates<span class="text-danger">*</span></label>
-                                  <div class="file-upload-wrapper">
-                                      <input type="file" class="file-upload-input"
-                                          id="academicCertificatesUpdate">
-                                      <label for="academicCertificatesUpdate" class="file-upload-label"
-                                          style="display: none;">
-                                          <img src="../icons/file.svg" alt="file Icon">
-                                          <span class="file-upload-button">Select file</span>
-                                      </label>
-                                      <div class="file-upload-details" style="display: flex;">
-                                          <img src="../icons/check.svg" alt="check Icon">
-                                          <a href="#"
-                                              class="file-upload-name">uploaded-academic-certificates.pdf</a>
-                                          <img src="../icons/delete.svg" alt="delete Icon"
-                                              class="file-upload-remove">
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
 
                       <div class="row">
                           <div class="col-md-6 mb-2">
                               <div class="form-group">
-                                  <label for="clearanceCertificateUpdate" class="form-label">Clearance certificate
-                                      (good conduct)<span class="text-danger">*</span></label>
+                                  <label for="clearanceCertificateUpdate" class="form-label" data-translate="clearanceCertificate"></label><span class="text-danger">*</span>
                                   <div class="file-upload-wrapper">
                                       <input type="file" class="file-upload-input"
                                           id="clearanceCertificateUpdate">
                                       <label for="clearanceCertificateUpdate" class="file-upload-label"
                                           style="display: none;">
                                           <img src="../icons/file.svg" alt="file Icon">
-                                          <span class="file-upload-button">Select file</span>
+                                          <span class="file-upload-button" data-translate="selectFile"></span>
                                       </label>
                                       <div class="file-upload-details" style="display: flex;">
                                           <img src="../icons/check.svg" alt="check Icon">
@@ -1049,14 +995,13 @@
                           </div>
                           <div class="col-md-6 mb-2">
                               <div class="form-group">
-                                  <label for="acceptanceLetterUpdate" class="form-label">Acceptance letter from
-                                      the university<span class="text-danger">*</span></label>
+                                  <label for="acceptanceLetterUpdate" class="form-label" data-translate="acceptenceLetterFromTheUniversity"></label><span class="text-danger">*</span>
                                   <div class="file-upload-wrapper">
                                       <input type="file" class="file-upload-input" id="acceptanceLetterUpdate">
                                       <label for="acceptanceLetterUpdate" class="file-upload-label"
                                           style="display: none;">
                                           <img src="../icons/file.svg" alt="file Icon">
-                                          <span class="file-upload-button">Select file</span>
+                                          <span class="file-upload-button" data-translate="selectFile"></span>
                                       </label>
                                       <div class="file-upload-details" style="display: flex;">
                                           <img src="../icons/check.svg" alt="check Icon">
@@ -1072,15 +1017,14 @@
                       <div class="row">
                           <div class="col-md-6 mb-2">
                               <div class="form-group">
-                                  <label for="ieltsCertificateUpdate" class="form-label">(IELTS) or (EMSAT)
-                                      certificate or an approved certificate<span
-                                          class="text-danger">*</span></label>
+                                  <label for="ieltsCertificateUpdate" class="form-label" data-translate="ieltsOrEmsatCertificate"></label><span
+                                  class="text-danger">*</span>
                                   <div class="file-upload-wrapper">
                                       <input type="file" class="file-upload-input" id="ieltsCertificateUpdate">
                                       <label for="ieltsCertificateUpdate" class="file-upload-label"
                                           style="display: none;">
                                           <img src="../icons/file.svg" alt="file Icon">
-                                          <span class="file-upload-button">Select file</span>
+                                          <span class="file-upload-button" data-translate="selectFile"></span>
                                       </label>
                                       <div class="file-upload-details" style="display: flex;">
                                           <img src="../icons/check.svg" alt="check Icon">
@@ -1093,15 +1037,14 @@
                           </div>
                           <div class="col-md-6 mb-2">
                               <div class="form-group">
-                                  <label for="universitysRequirementsUpdate" class="form-label">According to the
-                                      university’s requirements<span class="text-danger">*</span></label>
+                                  <label for="universitysRequirementsUpdate" class="form-label" data-translate="accordingToTheUniversityRequirments"></label><span class="text-danger">*</span>
                                   <div class="file-upload-wrapper">
                                       <input type="file" class="file-upload-input"
                                           id="universitysRequirementsUpdate">
                                       <label for="universitysRequirementsUpdate" class="file-upload-label"
                                           style="display: none;">
                                           <img src="../icons/file.svg" alt="file Icon">
-                                          <span class="file-upload-button">Select file</span>
+                                          <span class="file-upload-button" data-translate="selectFile"></span>
                                       </label>
                                       <div class="file-upload-details" style="display: flex;">
                                           <img src="../icons/check.svg" alt="check Icon">
@@ -1118,15 +1061,14 @@
                       <div class="row">
                           <div class="col-md-6 mb-2">
                               <div class="form-group">
-                                  <label for="highSchoolDiplomaUpdate" class="form-label">High school diploma
-                                      attested by the Ministry of Education<span
-                                          class="text-danger">*</span></label>
+                                  <label for="highSchoolDiplomaUpdate" class="form-label" data-translate="highSchoolDiploma"></label><span
+                                  class="text-danger">*</span>
                                   <div class="file-upload-wrapper">
                                       <input type="file" class="file-upload-input" id="highSchoolDiplomaUpdate">
                                       <label for="highSchoolDiplomaUpdate" class="file-upload-label"
                                           style="display: none;">
                                           <img src="../icons/file.svg" alt="file Icon">
-                                          <span class="file-upload-button">Select file</span>
+                                          <span class="file-upload-button" data-translate="selectFile"></span>
                                       </label>
                                       <div class="file-upload-details" style="display: flex;">
                                           <img src="../icons/check.svg" alt="check Icon">
@@ -1140,16 +1082,15 @@
                           </div>
                           <div class="col-md-6 mb-2">
                               <div class="form-group">
-                                  <label for="universityAcademicRecordUpdate" class="form-label">University
-                                      academic record in case of continuation of study<span
-                                          class="text-danger">*</span></label>
+                                  <label for="universityAcademicRecordUpdate" class="form-label" data-translate="universityAcademicRecord"></label><span
+                                  class="text-danger">*</span>
                                   <div class="file-upload-wrapper">
                                       <input type="file" class="file-upload-input"
                                           id="universityAcademicRecordUpdate">
                                       <label for="universityAcademicRecordUpdate" class="file-upload-label"
                                           style="display: none;">
                                           <img src="../icons/file.svg" alt="file Icon">
-                                          <span class="file-upload-button">Select file</span>
+                                          <span class="file-upload-button" data-translate="selectFile"></span>
                                       </label>
                                       <div class="file-upload-details" style="display: flex;">
                                           <img src="../icons/check.svg" alt="check Icon">
@@ -1166,13 +1107,12 @@
                       <div class="row">
                           <div class="col-md-6 mb-2">
                               <div class="form-group">
-                                  <label for="podCardUpdate" class="form-label">POD card from the Ministry of
-                                      Community Development<span class="text-danger">*</span></label>
+                                  <label for="podCardUpdate" class="form-label" data-translate="podCard"></label><span class="text-danger">*</span>
                                   <div class="file-upload-wrapper">
                                       <input type="file" class="file-upload-input" id="podCardUpdate">
                                       <label for="podCardUpdate" class="file-upload-label" style="display: none;">
                                           <img src="../icons/file.svg" alt="file Icon">
-                                          <span class="file-upload-button">Select file</span>
+                                          <span class="file-upload-button" data-translate="selectFile"></span>
                                       </label>
                                       <div class="file-upload-details" style="display: flex;">
                                           <img src="../icons/check.svg" alt="check Icon">
@@ -1186,7 +1126,7 @@
                       </div>
                   </div>
               </div>
-              <button type="button" class="btn mt-5" id="continueBtn">Submit</button>
+              <button type="button" class="btn mt-5" id="continueBtn" data-translate="submit"></button>
           </div>
       </div>
   </div>
@@ -1197,39 +1137,41 @@
       <div class="card-body">
           <div class="text-icon-container">
               <img class="check-icon" src="../icons/check.svg" alt="check Icon">
-              <p class="text-title">Congratulations! Your scholarship application has been received.</p>
+              <p class="text-title" data-translate="congratulations"></p>
           </div>
           <div class="card-body sub-body mt-4">
-              <p class="sub-body-title">Application ID: #1234567890</p>
-              <p class="sub-body-text">Please wait until we contact you as soon as possible</p>
+              <p class="sub-body-title" data-translate="applicationId">#1234567890</p>
+              <p class="sub-body-text" data-translate="pleaseWait"></p>
           </div>
       </div>
-      <button type="button" class="btn mt-3" id="backToHomeBtn">Back To Home</button>
+      <button type="button" class="btn mt-3" id="backToHomeBtn" data-translate="backToHome"></button>
   </div>  
   <div class="questions-card border-1 mt-5 p-4">
       <div class="card-body">
-          <p class="text-title mb-4">Any Questions?</p>
-          <p class="sub-body-text">RTA aims at providing people of determination with the same rights and benefits as other citizens, providing them with productive employment which is suitable as per their academic qualifications and their physical capabilities. For our list of jobs, please click the below button:</p>
+          <p class="text-title mb-4" data-translate="anyQuestions"></p>
+          <p class="sub-body-text" data-translate="rtaProvidepeopleOfDetermination"></p>
       </div>
   </div>
 </div>
 
 <div class="container mt-5">
-  <p class="apply-title"><img src="../icons/apply.svg" alt="Apply Icon">Track your Scholarship Program application</p>
-  <div class="row mt-4">
+  <div class="apply-container">
+    <img src="../icons/apply.svg" alt="Apply Icon">
+    <p class="apply-title" data-translate="trackYourScholarship"></p>
+  </div>  <div class="row mt-4">
     <div class="card scholarship-card track-scholarship-card col-md-10">
       <div class="card-body">
         <ul class="terms-list">
-          <li>Takes 2 minutes to complete</li>
-          <li>Does not require you to create an account</li>
-          <li>2 simple steps</li>
+          <li data-translate="take2Minutes"></li>
+          <li data-translate="doesNotRequireAccount"></li>
+          <li data-translate="2SimpleSteps"></li>
         </ul>
       </div>
     </div>
     <div class="help-section col-md-2">
-      <p class="help-title">Can we help?</p>
-      <p class="help-option"><img src="../icons/phone.svg" alt="Call Icon"> Call us on <span class="bold-text">800 90 90</span></p>
-      <p class="help-option help-option-mahboub"><img src="../icons/Mahboub.svg" alt="Mahboub Icon"> Chat with <span class="bold-text">Mahboub</span></p>
+      <p class="help-title" data-translate="canWeHelp"></p>
+      <p class="help-option"><img src="../icons/phone.svg" alt="Call Icon" > <span data-translate="callUsOn"></span><span class="help-bold-text">800 90 90</span></p>
+      <p class="help-option help-option-mahboub"><img src="../icons/Mahboub.svg" alt="Mahboub Icon"> <span data-translate="chatWith"> </span><span class="help-bold-text" data-translate="mahboub"></span></p>
     </div>
   </div>
 </div>
@@ -1239,21 +1181,26 @@
     <div class="card-header" data-bs-toggle="collapse" href="#statusStep1" role="button" aria-expanded="false" aria-controls="statusStep1">
       <span class="step step-one">1</span>
       <div class="step-details">
-        <span class="step">Step 1 of 2</span>
-        <h5 class="card-title title">Scholarship Program application ID</h5>
+        <span class="step" data-translate="step1of2"></span>
+        <h5 class="card-title title" data-translate="scholarshipProgramApplicationId"></h5>
       </div>
     </div>
     <div id="statusStep1" class="collapse">
     <div class="card-body first-card-body">
-      <p class="details-text">Enter your 19 digit Application reference ID </p>
+      <p class="details-text" data-translate="enterYour19Digit"></p>
       <div class="col-md-6 mt-5">
           <div class="form-group">
-            <label class="form-label">Application reference ID<span class="text-danger">*</span></label>
+            <label class="form-label" data-translate="applicationReferenceId"></label><span class="text-danger">*</span>
             <input type="number" class="form-control custom-input" placeholder="e.g. 1234567890" required>
           </div>
         </div>
-        <p class="sub-text">All fields with (<span class="text-danger">*</span>) are mandatory</p>
-      <button type="button" class="btn mt-4" id="continueBtn" disabled>Next</button>
+        <div class="mandatory-text">
+          <span class="sub-text" data-translate="allFieldsWith"></span>
+          (<span class="text-danger">*</span>)
+          <span class="sub-text" data-translate="areMandatory"></span>
+      </div>
+      
+      <button type="button" class="btn mt-4" id="continueBtn" disabled data-translate="next"></button>
     </div>
     </div>
   </div>
@@ -1264,8 +1211,8 @@
     <div class="card-header" data-bs-toggle="collapse" href="#statusStep2" role="button" aria-expanded="false" aria-controls="statusStep2">
       <span class="step step-one">2</span>
       <div class="step-details">
-        <span class="step">Step 2 of 2</span>
-        <h5 class="card-title title">Scholarship Application Status</h5>
+        <span class="step" data-translate="step2of2"></span>
+        <h5 class="card-title title" data-translate="scholarshipApplicationStatus"></h5>
       </div>
     </div>
     <div id="statusStep2" class="collapse">
@@ -1273,11 +1220,11 @@
     <div class="card-body first-card-body">
       <div class="row mt-2">
         <div class="col-md-6">
-            <p class="regular-text">Your Application Status is:</p>
+            <p class="regular-text" data-translate="yourApplicationStatusIs"></p>
             <p id="statusText" class="bold-text"></p>
         </div>
         <div class="col-md-6">
-            <p class="regular-text">Your Application Reference ID:</p>
+            <p class="regular-text" data-translate="yourApplicationStatusIs"></p>
             <p class="bold-text">A7544 534 775376846839</p>
         </div>
     </div>
@@ -1296,7 +1243,7 @@
   <div class="help-card-header mt-5">
     <ul class="help-message">
       <img class="phone-icon" src="../icons/phone.svg" alt="phone Icon">
-      <p>Did we get your information wrong? Call us on 800 90 90 and we will help!</p>
+      <p data-translate="callUsAndWeWillHelp"></p>
     </ul>
   </div>
 </div>
@@ -1305,8 +1252,8 @@
 <div class="container mt-5">
   <div class="engage-container mb-4">
     <div class="engage-container-text">
-      <h2 class="fw-400 fs-32 text-dark">Engage with Us</h2>
-      <p class="fw-400 fs-16 text-dark">We are here for you. Do not hesitate to communicate with us via the following channels:</p>
+      <h2 class="fw-400 fs-32 text-dark" data-translate="engageWithUs"></h2>
+      <p class="fw-400 fs-16 text-dark" data-translate="weAreHereForYou"></p>
     </div>
     <div class="row justify-content-start">
        <div class="col mb-4">
@@ -1316,8 +1263,8 @@
               <img src="../icons/Mahboub.svg" alt="Mahboub Icon">
               <i class="bi bi-icon-name"></i>
             </div>
-            <h5 class="engage-card-title">Chat with Mahboub</h5>
-            <p class="engage-card-text">Chat and apply for services with Mahboub</p>
+            <h5 class="engage-card-title" data-translate="chatWithMahboub"></h5>
+            <p class="engage-card-text" data-translate="chatAndApplyForServicesWithMahboub"></p>
           </div>
         </div>
       </div>
@@ -1328,8 +1275,8 @@
               <img src="../icons/Majlis.svg" alt="Majlis Icon">
               <i class="bi bi-icon-name"></i>
             </div>
-            <h5 class="engage-card-title">MBR Majlis</h5>
-            <p class="engage-card-text">Participate in building the future of Dubai</p>
+            <h5 class="engage-card-title" data-translate="mbrMajlis"></h5>
+            <p class="engage-card-text" data-translate="participateInBuildingDubai"></p>
           </div>
         </div>
       </div>
@@ -1340,8 +1287,8 @@
               <img src="../icons/Feedback.svg" alt="Feedback Icon">
               <i class="bi bi-icon-name"></i>
             </div>
-            <h5 class="engage-card-title">Feedback & Ideas</h5>
-            <p class="engage-card-text">Let us know your ideas, complaints or questions</p>
+            <h5 class="engage-card-title" data-translate="feedbackAndIdeas"></h5>
+            <p class="engage-card-text" data-translate="letusNowYourIdeas"></p>
           </div>
         </div>
       </div>
@@ -1352,8 +1299,8 @@
               <img src="../icons/email.svg" alt="Email Icon">
               <i class="bi bi-icon-name"></i>
             </div>
-            <h5 class="engage-card-title">Email us </h5>
-            <p class="engage-card-text">Send your questions or ideas by email</p>
+            <h5 class="engage-card-title" data-translate="emailUs"></h5>
+            <p class="engage-card-text" data-translate="sendYourQuestionsOrIdeasByEmail"></p>
           </div>
       </div>
     </div>
@@ -1522,6 +1469,44 @@ document.querySelectorAll('input[name="nationality"]').forEach((input) => {
         break;
     }
   });
+
+  // Translate
+   document.addEventListener('DOMContentLoaded', () => {
+      const translateElements = document.querySelectorAll('[data-translate]');
+      const languageButton = document.getElementById('toggleLanguageBtn');
+      const rtlStylesheet = document.getElementById('rtlStylesheet');
+      let currentLanguage = 'en';
+
+      const loadLanguage = (lang) => {
+        fetch(`${lang}.json`)
+          .then(response => response.json())
+          .then(translations => {
+            translateElements.forEach(el => {
+              const key = el.getAttribute('data-translate');
+              if (translations[key]) {
+                el.innerText = translations[key];
+              }
+            });
+            if (lang === 'ar') {
+              document.documentElement.setAttribute('dir', 'rtl');
+              rtlStylesheet.disabled = false;
+            } else {
+              document.documentElement.setAttribute('dir', 'ltr');
+              rtlStylesheet.disabled = true;
+            }
+          })
+          .catch(error => console.error('Error loading translations:', error));
+      };
+
+      languageButton.addEventListener('click', () => {
+        currentLanguage = currentLanguage === 'en' ? 'ar' : 'en';
+        languageButton.innerText = currentLanguage === 'en' ? 'العربية' : 'English';
+        loadLanguage(currentLanguage);
+      });
+
+      loadLanguage(currentLanguage);
+    });
+
   </script>
 </body>
 </html>
