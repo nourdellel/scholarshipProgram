@@ -1221,17 +1221,20 @@
       <div class="row mt-2">
         <div class="col-md-6">
             <p class="regular-text" data-translate="yourApplicationStatusIs"></p>
-            <p id="statusText" class="bold-text"></p>
+            <p id="statusTextApproved" class="bold-text approved" style="display: none;" data-translate="approved"></p>
+            <p id="statusTextRejected" class="bold-text rejected" style="display: none;" data-translate="rejected"></p>
+            <p id="statusTextPending" class="bold-text pending" style="display: none;" data-translate="pending"></p>
         </div>
         <div class="col-md-6">
-            <p class="regular-text" data-translate="yourApplicationStatusIs"></p>
+            <p class="regular-text" data-translate="yourApplicationReferenceId"></p>
             <p class="bold-text">A7544 534 775376846839</p>
         </div>
     </div>
     <div class="status-card-header mt-5" id="statusCard">
       <ul class="status-message" id="statusMessage">
         <img class="status-icon" id="statusIcon" alt="status Icon">
-        <p id="statusDescription"></p>
+        <p id="statusDescriptionApproved" class="status-description" style="display: none;" data-translate="approvedMessage"></p>
+        <p id="statusDescriptionRejected" class="status-description" style="display: none;" data-translate="rejectedMessage"></p>
       </ul>
     </div>
   </div>
@@ -1239,7 +1242,7 @@
   </div>
 </div>
 
-<div class="container help-container">
+<div class="container">
   <div class="help-card-header mt-5">
     <ul class="help-message">
       <img class="phone-icon" src="../icons/phone.svg" alt="phone Icon">
@@ -1434,41 +1437,44 @@ document.querySelectorAll('input[name="nationality"]').forEach((input) => {
             });
 
       //status step2
-      document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
     const status = 'Approved'; // Change this value to 'Rejected', 'Pending', or 'Approved'
-  
-    const statusText = document.getElementById('statusText');
+
+    const statusTextApproved = document.getElementById('statusTextApproved');
+    const statusTextRejected = document.getElementById('statusTextRejected');
+    const statusTextPending = document.getElementById('statusTextPending');
     const statusCard = document.getElementById('statusCard');
-    const statusMessage = document.getElementById('statusMessage');
     const statusIcon = document.getElementById('statusIcon');
-    const statusDescription = document.getElementById('statusDescription');
-  
+    const statusDescriptionApproved = document.getElementById('statusDescriptionApproved');
+    const statusDescriptionRejected = document.getElementById('statusDescriptionRejected');
+    const statusMessage = document.getElementById('statusMessage');
+
     switch (status) {
       case 'Approved':
-        statusText.textContent = 'Approved';
-        statusText.classList.add('approved');
+        statusTextApproved.style.display = 'block';
         statusCard.classList.add('status-card-approved');
         statusMessage.classList.add('status-message-approved');
         statusIcon.src = '../icons/checkGreen.svg';
-        statusDescription.textContent = 'Please note that you have been initially accepted into the scholarship program and will be contacted to move to the interview stage';
+        statusDescriptionApproved.style.display = 'block';
         break;
       case 'Rejected':
-        statusText.textContent = 'Rejected';
-        statusText.classList.add('rejected');
+        statusTextRejected.style.display = 'block';
         statusCard.classList.add('status-card-rejected');
         statusMessage.classList.add('status-message-rejected');
         statusIcon.src = '../icons/rejected.svg';
-        statusDescription.textContent = 'We apologize for rejecting your application. We wish you success';
+        statusDescriptionRejected.style.display = 'block';
         break;
       case 'Pending':
-        statusText.textContent = 'Pending';
-        statusText.classList.add('pending');
-        statusCard.style.display = 'none';
+        statusTextPending.style.display = 'block';
+        statusCard.classList.add('pending');
         break;
       default:
         break;
     }
-  });
+});
+
+
+
 
   // Translate
    document.addEventListener('DOMContentLoaded', () => {
