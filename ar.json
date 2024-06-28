@@ -157,6 +157,9 @@
     "mahboub": "محبوب",
     "approved": "موافقة",
     "rejected": "مرفوض",
-    "pending": "قيد الانتظار"
+    "pending": "قيد الانتظار",
+    "highSchoolGraduationPercentage": "نسبة التخرج من الثانوية العامة",
+    "provideMostRecentGPA": "يرجى تقديم أحدث متوسط ​​درجات معدل التراكمي الخاص بك",
+    "currentMajor": "التخصص الحالي"
 }
   

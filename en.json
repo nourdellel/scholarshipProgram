@@ -117,7 +117,7 @@
     "yesImUaeNational": "Yes, I am UAE national",
     "submit": "Submit",
     "congratulations": "Congratulations! Your scholarship application has been received.",
-    "applicationId": "ApplicatiYour Application Statuon ID:",
+    "applicationId": "Application ID:",
     "pleaseWait": "Please wait until we contact you as soon as possible",
     "backToHome": "Back To Home",
     "anyQuestions": "Any Questions?",
@@ -157,6 +157,9 @@
     "mahboub": "Mahboub",
     "approved": "Approved",
     "rejected": "Rejected",
-    "pending": "Pending"
+    "pending": "Pending",
+    "highSchoolGraduationPercentage": "High school graduation percentage",
+    "provideMostRecentGPA": "Please provide your most recent Grade Point Average (GPA)",
+    "currentMajor": "Current major"
 }
   

@@ -101,7 +101,7 @@
             <div class="col-md-6 mb-4">
               <div class="form-group">
                 <label class="form-label" data-translate="fullName"></label><span class="text-danger">*</span>
-                <input type="text" class="form-control custom-input" placeholder="Full Name" required>
+                <input type="text" class="form-control custom-input" data-placeholder="fullName" required>
               </div>
             </div>
             <div class="col-md-6 mb-4">
@@ -152,7 +152,7 @@
             <div class="col-md-6 mb-4">
               <div class="form-group">
                 <label class="form-label" data-translate="dateOfBirth"></label><span class="text-danger">*</span>
-                <input type="date" class="form-control custom-input" placeholder="Full Name" required>
+                <input type="date" class="form-control custom-input" data-placeholder="Full Name" required>
               </div>
             </div>
             <div class="col-md-6 mb-4">
@@ -165,7 +165,7 @@
             <div class="col-md-6 mb-4">
               <div class="form-group">
                 <label class="form-label" data-translate="emailAddress"></label><span class="text-danger">*</span>
-                <input type="email" class="form-control custom-input" placeholder="ex: name@example.com" required>
+                <input type="email" class="form-control custom-input" placeholder="name@example.com" required>
                 <small class="form-text text-muted" data-translate="emailAddress"></small>
               </div>
             </div>
@@ -258,7 +258,7 @@
             <div id="highSchoolPercentageSection" class="col-md-6 mb-4" style="display: none;">
               <div class="form-group">
                 <label class="form-label" data-translate="general"></label><span class="text-danger">*</span>
-                <input type="number" class="form-control custom-input" id="hsg" placeholder="High school graduation percentage" required>
+                <input type="number" class="form-control custom-input" id="hsg" data-placeholder="highSchoolGraduationPercentage" required>
                 <div class="invalid-feedback" id="hsgError" data-translate="highSchoolGraduationPercentageAbove90"></div>
               </div>
             </div>
@@ -280,7 +280,7 @@
             <div id="universityGPASection" class="col-md-6" style="display: none;">
               <div class="form-group">
                 <label class="form-label" data-translate="currentGPA"></label><span class="text-danger">*</span>
-                <input type="number" class="form-control custom-input" id="gpa" placeholder="Please provide your most recent Grade Point Average (GPA)" required>
+                <input type="number" class="form-control custom-input" id="gpa" data-placeholder="provideMostRecentGPA" required>
                 <div class="invalid-feedback" id="gpaError" data-translate="graduationPercentageMustBeMore35"></div>
               </div>
             </div>
@@ -288,7 +288,7 @@
             <div class="col-md-6">
               <div class="form-group">
                 <label class="form-label" data-translate="graduationPercentageMustBeMore35"></label><span class="text-danger">*</span>
-                <input type="text" class="form-control custom-input" placeholder="current major" required>
+                <input type="text" class="form-control custom-input" data-placeholder="currentMajor" required>
               </div>
             </div>
           </div>
@@ -367,14 +367,14 @@
                                 <div class="form-group">
                                     <label class="form-label" data-translate="emiratesIdNumber"></label><span class="text-danger">*</span>
                                     <input type="number" class="form-control custom-input"
-                                        placeholder="Emirates ID Number" required>
+                                        data-placeholder="emiratesIdNumber" required>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label class="form-label" data-translate="emiratesIdExpiryDate"></label><span class="text-danger">*</span>
                                     <input type="date" class="form-control custom-input"
-                                        placeholder="Emirates ID Expiry Date" required>
+                                        data-placeholder="emiratesIdExpiryDate" required>
                                 </div>
                             </div>
                         </div>
@@ -384,14 +384,14 @@
                                 <div class="form-group">
                                     <label class="form-label" data-translate="familyBookNumber"></label><span class="text-danger">*</span>
                                     <input type="number" class="form-control custom-input"
-                                        placeholder="Family Book Number" required>
+                                        data-placeholder="familyBookNumber" required>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label class="form-label" data-translate="passportNumber"></label><span class="text-danger">*</span>
                                     <input type="number" class="form-control custom-input"
-                                        placeholder="Passport Number" required>
+                                        data-placeholder="passportNumber" required>
                                 </div>  
                             </div>
                         </div>
@@ -401,14 +401,14 @@
                                 <div class="form-group">
                                     <label class="form-label" data-translate="passportPlaceOfIssue"></label><span class="text-danger">*</span>
                                     <input type="text" class="form-control custom-input"
-                                        placeholder="Passport Place Of Issue" required>
+                                        data-placeholder="passportPlaceOfIssue" required>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label class="form-label" data-translate="passportExpiryDate"></label><span class="text-danger">*</span>
                                     <input type="date" class="form-control custom-input"
-                                        placeholder="Passport Expiry Date" required>
+                                        data-placeholder="passportExpiryDate" required>
                                 </div>
                             </div>
                         </div>
@@ -418,7 +418,7 @@
                                 <div class="form-group">
                                     <label class="form-label" data-translate="nafsReferenceNumber"></label><span class="text-danger">*</span>
                                     <input type="number" class="form-control custom-input"
-                                        placeholder="NAFS Reference Number" required>
+                                        data-placeholder="nafsReferenceNumber" required>
                                 </div>
                             </div>
 
@@ -1140,7 +1140,7 @@
               <p class="text-title" data-translate="congratulations"></p>
           </div>
           <div class="card-body sub-body mt-4">
-              <p class="sub-body-title" data-translate="applicationId">#1234567890</p>
+              <span class="sub-body-title" data-translate="applicationId"></span><span class="sub-body-title">&nbsp;#1234567890</span>
               <p class="sub-body-text" data-translate="pleaseWait"></p>
           </div>
       </div>
@@ -1477,41 +1477,49 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
   // Translate
-   document.addEventListener('DOMContentLoaded', () => {
-      const translateElements = document.querySelectorAll('[data-translate]');
-      const languageButton = document.getElementById('toggleLanguageBtn');
-      const rtlStylesheet = document.getElementById('rtlStylesheet');
-      let currentLanguage = 'en';
+  document.addEventListener('DOMContentLoaded', () => {
+  const translateElements = document.querySelectorAll('[data-translate]');
+  const placeholderElements = document.querySelectorAll('[data-placeholder]');
+  const languageButton = document.getElementById('toggleLanguageBtn');
+  const rtlStylesheet = document.getElementById('rtlStylesheet');
+  let currentLanguage = 'en';
 
-      const loadLanguage = (lang) => {
-        fetch(`${lang}.json`)
-          .then(response => response.json())
-          .then(translations => {
-            translateElements.forEach(el => {
-              const key = el.getAttribute('data-translate');
-              if (translations[key]) {
-                el.innerText = translations[key];
-              }
-            });
-            if (lang === 'ar') {
-              document.documentElement.setAttribute('dir', 'rtl');
-              rtlStylesheet.disabled = false;
-            } else {
-              document.documentElement.setAttribute('dir', 'ltr');
-              rtlStylesheet.disabled = true;
-            }
-          })
-          .catch(error => console.error('Error loading translations:', error));
-      };
+  const loadLanguage = (lang) => {
+    fetch(`${lang}.json`)
+      .then(response => response.json())
+      .then(translations => {
+        translateElements.forEach(el => {
+          const key = el.getAttribute('data-translate');
+          if (translations[key]) {
+            el.innerText = translations[key];
+          }
+        });
+        placeholderElements.forEach(el => {
+          const key = el.getAttribute('data-placeholder');
+          if (translations[key]) {
+            el.placeholder = translations[key];
+          }
+        });
+        if (lang === 'ar') {
+          document.documentElement.setAttribute('dir', 'rtl');
+          rtlStylesheet.disabled = false;
+        } else {
+          document.documentElement.setAttribute('dir', 'ltr');
+          rtlStylesheet.disabled = true;
+        }
+      })
+      .catch(error => console.error('Error loading translations:', error));
+  };
 
-      languageButton.addEventListener('click', () => {
-        currentLanguage = currentLanguage === 'en' ? 'ar' : 'en';
-        languageButton.innerText = currentLanguage === 'en' ? 'العربية' : 'English';
-        loadLanguage(currentLanguage);
-      });
+  languageButton.addEventListener('click', () => {
+    currentLanguage = currentLanguage === 'en' ? 'ar' : 'en';
+    languageButton.innerText = currentLanguage === 'en' ? 'العربية' : 'English';
+    loadLanguage(currentLanguage);
+  });
 
-      loadLanguage(currentLanguage);
-    });
+  loadLanguage(currentLanguage);
+});
+
 
   </script>
 </body>
