@@ -4,7 +4,6 @@ body {
   padding: 0;
 }
 
-
 .card-container {
   max-width: 970px;
   border-radius: 10px;
@@ -440,8 +439,8 @@ li {
 .custom-label input[type="radio"] {
   position: absolute;
   border: 2px solid #171C8F;
-
 }
+
 [dir="ltr"] .custom-label input[type="radio"] {
   top: 10px;
   right: 10px;
@@ -465,7 +464,6 @@ li {
   font-size: 12px;
   font-weight: 400;
   text-align: start;
-
 }
 
 
@@ -517,8 +515,6 @@ li {
   align-items: flex-start;
 }
 
-
-
 .card-header[data-bs-toggle="collapse"][aria-expanded="false"] {
   background-color: #FFF;
   border-top: 1px solid rgba(0, 0, 0, .125);;
@@ -545,7 +541,6 @@ li {
   flex-direction: column;
   align-items: flex-start;
 }
-
 
 .engage-card-container {
   display: flex;
@@ -595,7 +590,6 @@ li {
   color: #666;
 }
 
-
 .text-title {
   font-size: 22px;
   font-weight: 400;
@@ -618,8 +612,6 @@ li {
   margin-right: 5px;
   margin-top: 5px;
 }
-
-
 
 .questions-card {
   background-color: #EEEEEE;
@@ -759,9 +751,19 @@ li {
 
 .error-message-container {
   display: flex;
-  align-items: baseline;
+  align-items: flex-start;
 }
 
 .cancel-icon {
   padding:0px 5px;
+  margin-top: 16px;
+}
+
+
+.btn-language {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  font-weight: 600;
+  padding: 10px;
+  margin: 10px
 }
