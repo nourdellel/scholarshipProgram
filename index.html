@@ -1438,7 +1438,7 @@ document.querySelectorAll('input[name="nationality"]').forEach((input) => {
 
       //status step2
 document.addEventListener('DOMContentLoaded', function() {
-    const status = 'Approved'; // Change this value to 'Rejected', 'Pending', or 'Approved'
+    const status = 'Pending'; // Change this value to 'Rejected', 'Pending', or 'Approved'
 
     const statusTextApproved = document.getElementById('statusTextApproved');
     const statusTextRejected = document.getElementById('statusTextRejected');
@@ -1467,6 +1467,7 @@ document.addEventListener('DOMContentLoaded', function() {
       case 'Pending':
         statusTextPending.style.display = 'block';
         statusCard.classList.add('pending');
+        statusIcon.style.display = "none"
         break;
       default:
         break;
